@@ -1,0 +1,25 @@
+Kernel config:
+	cpu freq governor: under performance, 100+C while compiling
+	changed to powersave, let's see how this affects temps
+	set thinkpad ACPI extras to MODULE
+X drivers
+	libinput over synaptics, apparently libinput is "much better"
+BIOS
+	disabled all Intel security nonsense
+	initially set to maximum performance, high cpu temps when compiling
+	setting to powersave to see how this affects temps
+ACPI
+	sys-power/acpid for keybind info
+Fingerprint reader
+	libfprint
+Scheduler
+	cat /sys/block/nvme0n1/queue/scheduler
+Custom startup scripts
+	scheduler
+	backlight
+Tap to click w/ libinput
+	/etc/X11/xorg.conf.d/40-libinput.conf & 99-synaptics-overrides.conf
+	https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpad
+	2nd answer
+TODO
+	SD card, webcam, fingerprint

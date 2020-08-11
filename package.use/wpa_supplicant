@@ -1,0 +1,21 @@
+net-wireless/wpa_supplicant qt5
+# required by www-client/firefox-79.0-r2::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.8.2 postproc
+# required by www-client/firefox-79.0-r2::gentoo[pgo]
+# required by www-client/firefox (argument)
+>=x11-base/xorg-server-1.20.8-r1 xvfb
+# required by www-client/firefox-79.0-r2::gentoo[clang]
+# required by www-client/firefox (argument)
+>=sys-devel/llvm-10.0.1 gold
+# required by mail-client/thunderbird-68.11.0::gentoo[system-sqlite]
+# required by thunderbird (argument)
+>=dev-db/sqlite-3.32.3-r1 secure-delete
+# required by gnome-base/gnome-keyring-3.36.0::gentoo
+# required by app-crypt/libsecret-0.20.3::gentoo
+# required by net-im/element-desktop-1.7.3::matrix
+# required by net-im/element-desktop (argument)
+>=app-crypt/pinentry-1.1.0-r3 gnome-keyring
+# required by www-client/firefox-68.11.0::gentoo[system-libvpx]
+# required by =www-client/firefox-68.11.0 (argument)
+=media-libs/libvpx-1.7.0-r1 postproc

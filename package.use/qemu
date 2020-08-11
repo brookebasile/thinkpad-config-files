@@ -1,0 +1,1 @@
+app-emulation/qemu slirp aio alsa bzip2 caps curl debug fdt filecaps gtk jpeg ncurses nls opengl oss pin-upstream-blobs png pulseaudio python sdl seccomp spice ssh usb usbredir virgl virtfs vhost-net vnc xattr xkb QEMU_SOFTMMU_TARGETS: x86_64 aarch64 arm riscv32 riscv64 QEMU_USER_TARGETS: x86_64
