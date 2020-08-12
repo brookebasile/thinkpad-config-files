@@ -1,8 +1,15 @@
 #!/sbin/openrc-run
 # Copyright 2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
+# Put this in /etc/init.d
 
 name="backlight daemon"
 description="Turn Thinkpad backlight on at level 1"
 command=/home/sleepy/scripts/startup/backlight.sh
 command_args="${backlight_args}"
+
+# backlight.sh:
+# #!/bin/sh
+#
+# echo 1 > /sys/class/leds/tpacpi\:\:kbd_backlight/brightness
+

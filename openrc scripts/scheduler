@@ -1,8 +1,15 @@
 #!/sbin/openrc-run
 # Copyright 2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
+# Put this in /etc/init.d
 
 name="scheduler daemon"
 description="Set default scheduler to mq-deadline at startup"
 command=/home/sleepy/scripts/startup/scheduler.sh
 command_args="${scheduler_args}"
+
+# scheduler.sh
+# #!/bin/sh
+#
+# echo "mq-deadline" > /sys/block/nvme0n1/queue/scheduler
+
